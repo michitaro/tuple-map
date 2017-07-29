@@ -36,6 +36,10 @@ export class TupleMap<K extends Array<any>, V> {
         this.m.clear()
         this.idMaker.clear()
     }
+
+    _internalMapSize() {
+        return (this as any).idMaker.idMaker.m.size
+    }
 }
 
 

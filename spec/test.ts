@@ -18,7 +18,7 @@ console.assert(tm.get([1, 2]) == '1,2')
 
 tm.delete([1, 2])
 console.assert(tm.has([1, 2]) == false)
-console.assert((tm as any).idMaker.idMaker.m.size == 0)
+console.assert(tm._internalMapSize() == 0)
 
 
 tm.set([1, 2], '1,2')

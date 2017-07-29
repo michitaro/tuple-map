@@ -6,4 +6,5 @@ export declare class TupleMap<K extends Array<any>, V> {
     has(key: K): boolean;
     delete(key: K): boolean;
     clear(): void;
+    _internalMapSize(): any;
 }

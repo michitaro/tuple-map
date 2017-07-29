@@ -3,10 +3,15 @@
 <!-- TupleMapはほとんどES6のMapと同じですが、tupleをキーに持つことができます。 -->
 TupleMap is almost same as a ES6's Map, but it can have tuples as its keys.
 
+## Install
+```sh
+npm install --save @hscmap/tuple-map
+```
+
 ## Example
 
 ```typescript
-import { TupleMap } from "../src"
+import { TupleMap } from "@hscmap/tuple-map"
 
 const tm = new TupleMap<[number, number], string>()
 
